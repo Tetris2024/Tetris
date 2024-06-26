@@ -1,4 +1,4 @@
-import { authenticateUser, userExists } from '../BDD/init_bd.mjs';
+import { authenticateUser, userExists } from '../BDD/init_bd.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.login-form');

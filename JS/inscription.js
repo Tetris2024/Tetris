@@ -1,10 +1,7 @@
-import { addUser, userExists } from '../BDD/init_bd.mjs';
-
-console.log("inscription");
+import { addUser, userExists } from '../BDD/init_bd.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.signup-form');
-    console.log("inscription");
 
     form.addEventListener('submit', (event) => {
         event.preventDefault();
