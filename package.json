@@ -5,10 +5,11 @@
   "dependencies": {
     "@primer/css": "17.0.1",
     "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
     "sqlite3": "^5.1.7"
   },
   "scripts": {
-    "buildBDD": "node BDD/init_bd.mjs"
+    "start": "node JS/server.mjs"
   },
   "license": "MIT"
 }

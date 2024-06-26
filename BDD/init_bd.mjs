@@ -97,8 +97,4 @@ export function authenticateUser(username, password, callback) {
   });
 }
 
-
-
-// Exemple d'utilisation
 initDatabase();
-displayUsersWithPassword();

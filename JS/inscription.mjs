@@ -1,7 +1,10 @@
-import { addUser, userExists } from './init_bd.mjs';
+import { addUser, userExists } from '../BDD/init_bd.mjs';
+
+console.log("inscription");
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.signup-form');
+    console.log("inscription");
 
     form.addEventListener('submit', (event) => {
         event.preventDefault();
@@ -21,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 addUser(username, password);
                 form.reset();
+                window.location = "../pages/second_page.html";
                 alert('Inscription réussie!');
             }
         });
